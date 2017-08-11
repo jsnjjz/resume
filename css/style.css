@@ -1,0 +1,161 @@
+
+/*重置*/
+
+/*
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img { border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul { list-style: none; }
+
+caption, th { text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+*/
+
+q:before, q:after { content:;
+}
+
+
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix { zoom: 1; }
+
+.container { margin:10px auto; width:1000px;}
+
+.poster-main {
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.poster-main a, .poster-main img { display: block; }
+
+.poster-main .poster-list {
+  width: 1000px;
+  height: 500px;
+}
+
+.poster-main .poster-list .poster-item {
+  width: 200px;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.poster-item img {
+	width: 100%;
+	background-size: cover;
+}
+
+.poster-item div {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	opacity:1;
+	background-color:rgba(0,0,0,.8);
+	color:#ff6700;
+}
+
+.poster-item p {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 16px;
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.poster-item:hover div {
+	display: table;
+}
+
+.poster-main .poster-btn {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.poster-main .poster-prev-btn {
+  left: 0;
+  background: url(../images/left.png) no-repeat center center;
+}
+
+.poster-main .poster-next-btn {
+  right: 0;
+  background: url(../images/right.png) no-repeat center center;
+}
+
+.experience {
+	width: 868px;
+	margin: 100px auto;
+}
+.experience h2 {
+	text-align: center;
+	margin-bottom: 120px;
+	font-size: 44px;
+}
+
+.experience .time {
+	font-size: 24px;
+}
+.time .fir_time {
+	margin-left: 150px;
+}
+.time .sec_time {
+	margin-left: 120px;
+}
+
+.company {
+	overflow: hidden;
+	font-size: 18px;
+}
+.company .fir_company {
+	float: left;
+	margin-left: 150px;
+	width: 300px;
+}
+.company .sec_company {
+	float: left;
+	margin-left: 45px;
+	width: 330px;
+}
+
+.company h3 {
+	font-weight: 400;
+	line-height: 18px;
+}
+.company p {
+	line-height: 18px;
+}
